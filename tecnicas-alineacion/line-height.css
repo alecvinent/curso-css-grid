@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --altura-contenedor: 180px;
+  --distancia: calc(60px / 3) ;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  font-family: "Lato", sans-serif;
+  width: 550px;
+}
+
+.container, .container3, .container2, .container1 {
+  background: turquoise;
+  width: var(--altura-contenedor);
+  height: var(--altura-contenedor);
+}
+
+.element, .element9, .element8, .element7, .element6, .element5, .element4, .element3, .element2, .element1 {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.container1 {
+  text-align: left;
+  line-height: var(--altura-contenedor);
+}
+
+.element1 {
+  background: papayawhip;
+  display: inline-block;
+  line-height: 45px;
+  vertical-align: top;
+}
+
+.element2 {
+  background: papayawhip;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: middle;
+}
+
+.element3 {
+  background: papayawhip;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: bottom;
+}
+
+.container2 {
+  text-align: center;
+  line-height: var(--altura-contenedor);
+}
+
+.element4 {
+  background: pink;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: top;
+}
+
+.element5 {
+  background: pink;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: middle;
+}
+
+.element6 {
+  background: pink;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: bottom;
+}
+
+.container3 {
+  text-align: right;
+  line-height: var(--altura-contenedor);
+}
+
+.element7 {
+  background: lightcyan;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: top;
+}
+
+.element8 {
+  background: lightcyan;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: center;
+}
+
+.element9 {
+  background: lightcyan;
+  display: inline-block;
+  line-height: var(--distancia);
+  vertical-align: bottom;
+}
+
+/*# sourceMappingURL=line-height.css.map */
