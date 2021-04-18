@@ -1,0 +1,172 @@
+:root {
+  --head-color: #F6C09C;
+  --eye-container-color: #FFFFFF;
+  --eye-color: #00233B;
+  --beard-color: #00233B;
+  --mouth-color: #680524;
+  --teeth-color: #FFFFFF;
+  --tonge-color: #ED2860;
+  --neck-color:#ED927D;
+  --ear-color:#ED927D;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  background-color: grey;
+}
+
+.base-element, .mouth, .tonge, .teeth, .mouth-top-border, .beard, .nose, .eye-element, .eye-right, .eye-left {
+  width: 40px;
+  height: 40px;
+  background-color: var(--eye-container-color);
+  color: transparent;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.head {
+  width: 100px;
+  height: 250px;
+  border-radius: 45px;
+  background-color: var(--head-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.ears-container, .ear-element, .ear-right, .ear-left {
+  width: 155px;
+  height: 50px;
+  position: absolute;
+  top: 49%;
+}
+
+.ear-element, .ear-right, .ear-left {
+  position: absolute;
+  background-color: var(--head-color);
+  width: 29px;
+  border-radius: 10px;
+  top: 0;
+  height: 60%;
+  text-align: center;
+}
+
+.ear-element span, .ear-right span, .ear-left span {
+  color: #EA686A;
+  font-size: 13px;
+}
+
+.ear-left {
+  left: 0;
+}
+
+.ear-right {
+  right: 0;
+}
+
+.eyes-container--box {
+  width: 72px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--head-color);
+  left: 13%;
+  top: 19%;
+}
+
+.eye-left {
+  top: 50px;
+  left: 13px;
+}
+
+.eye-right {
+  top: 50px;
+  right: 14px;
+}
+
+.eye-element-inner, .eye-element-inner--right, .eye-element-inner--left {
+  width: 4px;
+  height: 4px;
+  background-color: var(--eye-color);
+  position: absolute;
+  border-radius: 20px;
+  top: 19px;
+}
+
+.eye-element-inner--left {
+  left: 20px;
+}
+
+.eye-element-inner--right {
+  right: 20px;
+}
+
+.nose {
+  top: 88px;
+  right: 30%;
+  z-index: 1000;
+  background-color: var(--head-color);
+}
+
+.beard {
+  width: 100%;
+  background-color: var(--eye-color);
+  top: 100px;
+  height: 100%;
+  z-index: 3;
+}
+
+.mouth, .tonge, .teeth, .mouth-top-border {
+  top: 25px;
+  right: 23%;
+  z-index: 0;
+  background-color: var(--mouth-color);
+  width: 54px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.mouth-top-border {
+  background-color: var(--eye-color);
+  width: 54px;
+  z-index: 1;
+  left: 23px;
+  height: 10px;
+}
+
+.teeth {
+  background-color: var(--teeth-color);
+  width: 75%;
+  left: 0;
+  top: 7px;
+  height: 11px;
+}
+
+.tonge {
+  background-color: var(--tonge-color);
+  top: 25px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  border-radius: 3px;
+  width: 60%;
+}
+
+.neck {
+  width: 65px;
+  height: 50px;
+  background-color: var(--head-color);
+  position: absolute;
+  overflow: hidden;
+  top: 66%;
+}
+
+/*# sourceMappingURL=dibujo-1.css.map */
